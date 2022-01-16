@@ -12,10 +12,10 @@
                 <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                      aria-labelledby="dropdownMenuLink">
                     <div class="dropdown-header">ข้อมูล:</div>
-                    <a class="dropdown-item" href="#">รีเฟรช</a>
-                    <a class="dropdown-item" href="#">ดูเบื้องลึก</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-sync fa-sm fa-fw mr-2 text-gray-400"></i>รีเฟรช</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-search fa-sm fa-fw mr-2 text-gray-400"></i>ดูเบื้องลึก</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">ลบข้อมูล</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-trash fa-sm fa-fw mr-2 text-gray-400"></i>ลบข้อมูล</a>
                 </div>
             </div>
         </div>

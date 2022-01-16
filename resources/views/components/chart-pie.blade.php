@@ -11,8 +11,9 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                      aria-labelledby="dropdownMenuLink">
-                    <div class="dropdown-header">Dropdown Header:</div>
-                    <a class="dropdown-item" href="#">Action</a>
+                    <div class="dropdown-header">ตัวเลือก: </div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-sync fa-sm fa-fw mr-2 text-gray-400"></i>รีเฟรซ</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
