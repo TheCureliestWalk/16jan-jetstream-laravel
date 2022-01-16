@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    @include('_layouts.head')
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+@include('_layouts.sidebar')
+
+<!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+        @include('_layouts.topbar')
+
+        <!-- Begin Page Content -->
+            <div class="container-fluid">
+                <x-page-heading/>
+                <!-- Content Row -->
+                <div class="row">
+                    <x-small-card/>
+                    <x-small-card-2/>
+                    <x-small-card-3/>
+                    <x-small-card-4/>
+                </div>
+                <!-- Content Row -->
+                <div class="row">
+                    <x-chart-graph/>
+                    <x-chart-pie/>
+                </div>
+                <!-- Content Row -->
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <x-progress-bar/>
+                        <x-example-color/>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <x-example-illustration/>
+                        <x-example-approch/>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="col-lg mb-4">
+                        <x-table/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <x-footer/>
+    </div>
+</div>
+<x-go-to-top/>
+<x-modal-logout/>
+@include('_layouts.scripts')
+</body>
+
+</html>

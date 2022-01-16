@@ -19,8 +19,19 @@
         </div>
     </form>
 
+
+        @guest
+        <ul class="navbar-nav ml-auto">
+            <div class="small text-gray-700 d-flex"><a href="{{ url('login') }}">กรุณาเข้าสู่ระบบ</a></div>
+        </ul>
+        @endguest
+        @auth
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
+
+
+
+
 
         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
         <li class="nav-item dropdown no-arrow d-sm-none">
@@ -197,6 +208,7 @@
         </li>
 
     </ul>
+            @endauth
 
 </nav>
 <!-- End of Topbar -->
