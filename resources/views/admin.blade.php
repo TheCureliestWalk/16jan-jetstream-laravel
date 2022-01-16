@@ -50,6 +50,12 @@
                         <x-example-approch/>
                     </div>
                 </div>
+
+                <div class="rows">
+                    <div class="col-lg mb-4">
+                        <x-table/>
+                    </div>
+                </div>
             </div>
         </div>
             <x-footer/>
