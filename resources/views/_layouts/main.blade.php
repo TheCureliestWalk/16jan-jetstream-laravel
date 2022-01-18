@@ -16,6 +16,7 @@
 
                 @include('_layouts.topbar')
                 <div class="container-fluid">
+
                     @yield('content')
                 </div>
             </div>

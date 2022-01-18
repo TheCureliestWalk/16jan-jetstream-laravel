@@ -12,6 +12,7 @@
             </div>
             <div class="modal-body">คุณแน่ใจว่าจะออกจากระบบ? เมื่อออกจากระบบแล้ว คุณต้องทำการเข้าสู่ระบบใหม้</div>
             <form action="{{ url('logout') }}" method="POST">
+                @csrf
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">กลับ</button>
                     <button type="submit" class="btn btn-danger">ยืนยัน</button>

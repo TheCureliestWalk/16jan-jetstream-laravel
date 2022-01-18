@@ -19,12 +19,6 @@
         </div>
     </form>
 
-
-        @guest
-        <ul class="navbar-nav ml-auto">
-            <div class="small text-gray-700 d-flex"><a href="{{ url('login') }}">กรุณาเข้าสู่ระบบ</a></div>
-        </ul>
-        @endguest
         @auth
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
@@ -79,7 +73,7 @@
                     </div>
                     <div>
                         <div class="small text-gray-500">December 12, 2019</div>
-                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        <span class="font-weight-bold">อยากทราบเรื่องการปรับปรุงระบบ</span>
                     </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -90,7 +84,7 @@
                     </div>
                     <div>
                         <div class="small text-gray-500">December 7, 2019</div>
-                        $290.29 has been deposited into your account!
+                        คุณได้เติมเงิน 250 บาท
                     </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -188,11 +182,11 @@
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                  aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    ข้อมูลโปรไฟล์
+                    <i class="fas fa-id-card fa-sm fa-fw mr-2 text-gray-400"></i>
+                    ดูการ์ดโปรไฟล์
                 </a>
                 <a class="dropdown-item" href="#">
-                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    <i class="fas fa-users-cog fa-sm fa-fw mr-2 text-gray-400"></i>
                     ตั้งค่าบัญชี
                 </a>
                 <a class="dropdown-item" href="#">
