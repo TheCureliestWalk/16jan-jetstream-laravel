@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class modal-logout extends Component
+class ProgressBar extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class modal-logout extends Component
      */
     public function render()
     {
-        return view('components.modal-logout');
+        return view('components.progress-bar');
     }
 }

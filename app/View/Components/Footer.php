@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class chart-graph extends Component
+class Footer extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class chart-graph extends Component
      */
     public function render()
     {
-        return view('components.chart-graph');
+        return view('components.footer');
     }
 }

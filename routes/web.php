@@ -24,3 +24,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
     return view('admin');
 })->name('admin');
+
+Route::post('/wallet', [\App\View\Components\CreateNewWallet::class, 'createNewWallet'])->name('wallet');

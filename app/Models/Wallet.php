@@ -16,7 +16,7 @@ class Wallet extends Model
         'user_id',
     ];
 
-    public function user(){
+    public function wallet(){
         return $this->hasOne(User::class);
     }
 }

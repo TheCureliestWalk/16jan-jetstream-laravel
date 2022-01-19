@@ -2,9 +2,11 @@
 
 namespace App\View\Components;
 
+use App\Models\Wallet;
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\Auth;
 
-class medium-card extends Component
+class SmallCard extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +25,6 @@ class medium-card extends Component
      */
     public function render()
     {
-        return view('components.medium-card');
+        return view('components.small-card');
     }
 }

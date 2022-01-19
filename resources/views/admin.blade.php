@@ -7,13 +7,7 @@
 
     <div class="row mb-4">
             <div class="col-lg-3">
-                <x-small-card>
-                    <x-slot name="border_color">success</x-slot>
-                    <x-slot name="title">รายได้รวมทั้งหมด</x-slot>
-                    <x-slot name="title_color">primary</x-slot>
-                    <x-slot name="text"> บาท</x-slot>
-                    <x-slot name="icon">wallet</x-slot>
-                </x-small-card>
+                <x-money-card/>
             </div>
 
         <x-small-card-2/>

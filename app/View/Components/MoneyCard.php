@@ -2,15 +2,18 @@
 
 namespace App\View\Components;
 
+use App\Models\Wallet;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\Component;
 
-class chart-pie extends Component
+class MoneyCard extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
+
     public function __construct()
     {
         //
@@ -23,6 +26,9 @@ class chart-pie extends Component
      */
     public function render()
     {
-        return view('components.chart-pie');
+        $user_id = Auth::User()->id;
+        $query = Wallet::where('user_id', $user_id)->get()->first();
+        $money = $query->balance;
+        return view('components.money-card', compact('money'));
     }
 }

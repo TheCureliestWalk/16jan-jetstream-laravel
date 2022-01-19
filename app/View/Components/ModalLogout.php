@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class chart extends Component
+class ModalLogout extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class chart extends Component
      */
     public function render()
     {
-        return view('components.chart');
+        return view('components.modal-logout');
     }
 }

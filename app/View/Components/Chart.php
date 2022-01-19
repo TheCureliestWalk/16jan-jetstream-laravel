@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class page-heading extends Component
+class Chart extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class page-heading extends Component
      */
     public function render()
     {
-        return view('components.page-heading');
+        return view('components.chart');
     }
 }

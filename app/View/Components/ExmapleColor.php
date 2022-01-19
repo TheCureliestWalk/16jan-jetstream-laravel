@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class progress-bar extends Component
+class ExampleColor extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class progress-bar extends Component
      */
     public function render()
     {
-        return view('components.progress-bar');
+        return view('components.example-color');
     }
 }

@@ -7,6 +7,7 @@
 <title>{{ config('app.name'), 'DynamixApp' }}</title>
 
 <!-- Custom fonts for this template-->
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <link href="{{ asset('css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 <link href="//cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
 <link
@@ -15,5 +16,4 @@
 
 <!-- Custom styles for this template-->
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
-
 @livewireStyles

@@ -1,5 +1,6 @@
 <!-- Bootstrap core JavaScript-->
 <script src="{{ asset('js/jquery/jquery.min.js') }}" defer></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 <script src="{{ asset('js/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
 
 <!-- Core plugin JavaScript-->
