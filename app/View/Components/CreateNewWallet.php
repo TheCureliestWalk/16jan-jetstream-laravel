@@ -2,10 +2,13 @@
 
 namespace App\View\Components;
 
+
 use Illuminate\View\Component;
 use Illuminate\Support\Facades\Auth;
 use UxWeb\SweetAlert\SweetAlert;
-use Illuminate\Support\Facades\Session;
+
+
+use App\Models\Wallet;
 
 
 
@@ -32,10 +35,22 @@ class CreateNewWallet extends Component
     }
 
     public function createNewWallet(){
+
+        $user_id = Auth::User()->id;
+        $query = $query = Wallet::where('user_id', '=', $user_id)->exists();
+
         if(!Auth::check()){
-             return redirect()->back()->with('error', 'Not Logged in Error!');
+             return redirect()->back()->with('error', 'กรุณาเข้าสู่ระบบก่อน');
         }else {
-            return redirect()->back()->with('error', 'Logged In Error!');
+            if(!$query){
+                Wallet::Create(['user_id' => $user_id]);
+                return redirect()->back()->with('error', 'สร้างกระเป๋าตังค์เรียบร้อย');
+            }elseif ($query)
+            {
+                return redirect()->back()->with('error', 'คุณมีกระเป๋าตังค์อยู่แล้ว');
+            }
         }
+
+
     }
 }

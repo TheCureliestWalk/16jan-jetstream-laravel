@@ -2,10 +2,9 @@
 
 namespace App\View\Components;
 
-use App\Models\User;
 use Illuminate\View\Component;
 
-class Table extends Component
+class ModalBox extends Component
 {
     /**
      * Create a new component instance.
@@ -14,7 +13,7 @@ class Table extends Component
      */
     public function __construct()
     {
-        //
+
     }
 
     /**
@@ -24,7 +23,6 @@ class Table extends Component
      */
     public function render()
     {
-        $users = User::all();
-        return view('components.table', compact('users'));
+        return view('components.modal-box');
     }
 }

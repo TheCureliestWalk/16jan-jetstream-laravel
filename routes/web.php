@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\View;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,12 +17,29 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/admin', function () {
+Route::get('/admin', function() {
     return view('admin');
-})->name('admin');
+})->middleware('auth:sanctum', 'verified')->name('admin');
 
-Route::post('/wallet', [\App\View\Components\CreateNewWallet::class, 'createNewWallet'])->name('wallet');
+Route::get('/dashboard', function() {
+    return view('dashboard');
+})->middleware('auth:sanctum', 'verified')->name('dashboard');
+
+Route::any('/wallet', [\App\View\Components\CreateNewWallet::class, 'createNewWallet'])->middleware('auth:sanctum')->name('wallet');
+
+
+
+
+//Route::middleware('auth:sanctum', 'verified')->group(function (){
+//    Route::get('/dashboard', function () {
+//        return view('dashboard');
+//    });
+//
+//    Route::get('/admin', function () {
+//        return view::make('admin');
+//    });
+//
+//    Route::get('/wallet', [\App\View\Components\CreateNewWallet::class, 'createNewWallet']);
+//
+//});

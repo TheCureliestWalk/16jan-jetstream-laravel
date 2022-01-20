@@ -65,7 +65,7 @@
                     <div class="col-md d-flex d-lg-inline-block">
                         <div class="col-md-6 justify-content-center">
                             <x-create-new-wallet/>
-                            @if(Session::has('error'))
+                            @if($sessions = Session::has('error'))
                                 <div class="alert alert-danger">
                                     <p>{{ Session::get('error') }}</p>
                                 </div>
@@ -82,7 +82,6 @@
                     </div>
                     <div class="col-lg mb-4">
                         <x-example-color/>
-
                         <x-example-illustration/>
                     </div>
 
@@ -103,6 +102,7 @@
 </div>
 <x-go-to-top/>
 <x-modal-logout/>
+<x-modal-box/>
 @include('_layouts.scripts')
 </body>
 
