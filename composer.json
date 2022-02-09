@@ -12,7 +12,12 @@
         "laravel/jetstream": "^2.6",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.4",
         "livewire/livewire": "^2.5",
+        "nyholm/psr7": "^1.4",
+        "sentry/sentry-laravel": "^2.11",
+        "spatie/laravel-image-optimizer": "^1.7",
+        "symfony/psr-http-message-bridge": "^2.1",
         "uxweb/sweet-alert": "^2.0"
     },
     "require-dev": {

@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class MediumCard extends Component
+class NewsCard extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class MediumCard extends Component
      */
     public function render()
     {
-        return view('components.medium-card');
+        return view('components.news-card');
     }
 }

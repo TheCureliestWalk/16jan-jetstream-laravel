@@ -17,7 +17,7 @@ class CreateWalletsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
-            $table->double('balance')->default(0);
+            $table->float('balance',5,2)->default(0);
             $table->double('on_hold')->default(0);
             $table->timestamps();
         });

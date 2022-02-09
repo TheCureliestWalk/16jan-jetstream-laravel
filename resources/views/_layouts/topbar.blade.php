@@ -176,16 +176,12 @@
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::User()->name }}</span>
                 <img class="img-profile rounded-circle"
-                     src="img/undraw_profile.svg">
+                     src="images/{{ Auth::user()->profile_image }}">
             </a>
             <!-- Dropdown - User Information -->
             <ul class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                  aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-id-card fa-sm fa-fw mr-2 text-gray-400"></i>
-                    ดูการ์ดโปรไฟล์
-                </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="{{ route('settings') }}">
                     <i class="fas fa-users-cog fa-sm fa-fw mr-2 text-gray-400"></i>
                     ตั้งค่าบัญชี
                 </a>

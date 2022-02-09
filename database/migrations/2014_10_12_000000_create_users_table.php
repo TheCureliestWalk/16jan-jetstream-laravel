@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->boolean('is_admin')->default(0);
             $table->boolean('is_lock')->default(0);
             $table->boolean('is_ban')->default(0);
+            $table->string('profile_image')->nullable();
             $table->timestamps();
         });
     }

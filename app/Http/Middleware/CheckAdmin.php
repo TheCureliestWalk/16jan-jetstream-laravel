@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class CheckWallet
+class CheckAdmin
 {
     /**
      * Handle an incoming request.
@@ -17,18 +17,11 @@ class CheckWallet
      */
     public function handle(Request $request, Closure $next)
     {
-
-
-        if(Auth::check()) // If already auth
+        if(Auth::User()->is_admin == 1) // If admin
             return $next($request);
         else {
-            // if not auth
-            return redirect()->route('login')->with('status', 'You are not logged in');
+            // if not admin
+            return redirect()->route('index')->with('error', 'You are not admin');
         }
-
-
-
-
-
     }
 }

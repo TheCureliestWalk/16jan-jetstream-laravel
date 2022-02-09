@@ -33,6 +33,7 @@ class User extends Authenticatable
         'is_admin',
         'is_lock',
         'is_ban',
+        'profile_image'
     ];
 
     /**

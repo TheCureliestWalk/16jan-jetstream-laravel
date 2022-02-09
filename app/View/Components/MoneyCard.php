@@ -29,7 +29,8 @@ class MoneyCard extends Component
 
         $user_id = Auth::User()->id;
         $query = Wallet::where('user_id', $user_id)->get()->first();
-        $money = $query->balance ?? 'คุณยังไม่สร้างกระเป๋าตังค์';
+        $money = $query->balance ?? null;
+
         return view('components.money-card', compact('money'));
     }
 }

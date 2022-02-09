@@ -4,8 +4,11 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <title>{{ config('app.name'), 'DynamixApp' }}</title>
+@livewireStyles
 
+<script rel="prefetch" src="//cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
 <!-- Custom fonts for this template-->
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <link href="{{ asset('css/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -16,4 +19,7 @@
 
 <!-- Custom styles for this template-->
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
-@livewireStyles
+
+<script src="{{ asset('js/chart.js/Chart.min.js') }}"></script>
+
+
