@@ -54,5 +54,9 @@
   });
 
 
+  //Datatable to userTable
+    $(document).ready( function () {
+        $('#userTable').DataTable();
+    } );
 
 })(jQuery); // End of use strict

@@ -20,6 +20,8 @@
 <!-- Custom styles for this template-->
 <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
+<link rel="stylesheet" href="//cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
 <script src="{{ asset('js/chart.js/Chart.min.js') }}"></script>
 
 

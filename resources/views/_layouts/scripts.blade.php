@@ -9,10 +9,12 @@
 <!-- Core plugin JavaScript-->
 <script src="{{ asset('js/jquery-easing/jquery.easing.min.js') }}" defer></script>
 
+<script src="//cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
 <!-- Custom scripts for all pages-->
 <script src="{{ asset('js/sb-admin-2.js') }}" defer></script>
 
-<!-- Page level plugins -->
+<!-- Datatable JS -->
 
 
 

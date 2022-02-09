@@ -27,6 +27,7 @@
     <x-go-to-top/>
     <x-modal-logout/>
 @include('_layouts.scripts')
+@include('sweetalert::alert')
 </body>
 
 </html>
